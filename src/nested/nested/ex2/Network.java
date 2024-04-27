@@ -6,7 +6,7 @@ public class Network {
         networkMessage.print();
     }
 
-    public class NetworkMessage {
+    public static class NetworkMessage {
         private String content;
 
         public NetworkMessage(String content) {
