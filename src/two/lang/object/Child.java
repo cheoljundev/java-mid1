@@ -1,4 +1,4 @@
-package two.lang.Object;
+package two.lang.object;
 
 public class Child extends Parent {
     public void childMethod() {

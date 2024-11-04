@@ -1,4 +1,4 @@
-package two.lang.Object.poly;
+package two.lang.object.poly;
 
 public class Dog {
     public void sound() {

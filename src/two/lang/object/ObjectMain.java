@@ -1,4 +1,4 @@
-package two.lang.Object;
+package two.lang.object;
 
 public class ObjectMain {
     public static void main(String[] args) {

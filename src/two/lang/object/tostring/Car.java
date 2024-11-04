@@ -1,4 +1,4 @@
-package two.lang.Object.tostring;
+package two.lang.object.tostring;
 
 public class Car {
     private String carName;

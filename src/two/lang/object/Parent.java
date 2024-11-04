@@ -1,4 +1,4 @@
-package two.lang.Object;
+package two.lang.object;
 
 public class Parent {
     public void parentMethod() {
