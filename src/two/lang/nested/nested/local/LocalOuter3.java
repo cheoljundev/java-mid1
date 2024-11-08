@@ -1,5 +1,7 @@
 package two.lang.nested.nested.local;
 
+import java.lang.reflect.Field;
+
 public class LocalOuter3 {
     private int outInstanceValue = 3;
 
@@ -29,5 +31,10 @@ public class LocalOuter3 {
         Printer printer = localOuter.process(2);
         // printer.print()를 process()의 스택 프레임이 사라진 이후에 실행한다.
         printer.print();
+
+        // 필드 확인
+        for (Field field : printer.getClass().getDeclaredFields()) {
+            System.out.println("field = " + field);
+        }
     }
 }
