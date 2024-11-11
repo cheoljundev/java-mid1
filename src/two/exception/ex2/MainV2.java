@@ -4,8 +4,9 @@ package two.exception.ex2;
 import java.util.Scanner;
 
 public class MainV2 {
-    public static void main(String[] args) throws NetworkClientExceptionV2 {
-        NetworkServiceV2_1 service = new NetworkServiceV2_1();
+    public static void main(String[] args) {
+        // NetworkServiceV2_1 service = new NetworkServiceV2_1();
+        NetworkServiceV2_2 service = new NetworkServiceV2_2();
 
         Scanner sc = new Scanner(System.in);
 
