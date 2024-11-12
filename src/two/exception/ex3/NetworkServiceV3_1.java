@@ -1,6 +1,9 @@
-package two.exception.ex3.exception;
+package two.exception.ex3;
 
-public class NetworkServiceV3_2 {
+import two.exception.ex3.exception.ConnectExceptionV3;
+import two.exception.ex3.exception.SendExceptionV3;
+
+public class NetworkServiceV3_1 {
     public void sendMessage(String  data) {
         String address = "https://example.com";
         NetworkClientV3 client = new NetworkClientV3(address);
@@ -11,12 +14,9 @@ public class NetworkServiceV3_2 {
             client.send(data);
         } catch (ConnectExceptionV3 e) {
             System.out.println("[연결 오류] : " + e.getAddress() + ", 메시지 : " + e.getMessage());
-        } catch (NetworkClientExceptionV3 e) {
-            System.out.println("[네트워크 오류] : 메시지 : " + e.getMessage());
-        } catch (Exception e) {
-            System.out.println("[알 수 없는 오류] : 메시지 : " + e.getMessage());
-        }
-        finally {
+        } catch (SendExceptionV3 e) {
+            System.out.println("[전송 오류] : " + e.getSendData() + ", 메시지 : " + e.getMessage());
+        } finally {
             client.disconnect();
         }
 

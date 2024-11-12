@@ -1,4 +1,4 @@
-package two.exception.ex3.exception;
+package two.exception.ex3;
 
 
 import java.util.Scanner;

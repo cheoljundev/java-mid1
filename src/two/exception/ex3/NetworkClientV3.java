@@ -1,4 +1,7 @@
-package two.exception.ex3.exception;
+package two.exception.ex3;
+
+import two.exception.ex3.exception.ConnectExceptionV3;
+import two.exception.ex3.exception.SendExceptionV3;
 
 public class NetworkClientV3 {
     private final String address;
